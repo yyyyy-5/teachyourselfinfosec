@@ -10,12 +10,323 @@
 <body>
 
   <div>
-.... currently baking....
+<h1 id="teach-yourself-information-security-1-0">Teach Yourself Information Security -1.0</h1>
+<p>Inspired by <a href="https://teachyourselfcs.com/">Teach Yourself Computer Science</a>, this guide intends to provide a basic (and generally, free) set of resources for getting started with learning computer security while also answering the following questions: </p>
+<ul>
+<li><strong>Which subjects</strong> should you learn, and why?</li>
+<li>What are some <strong>recommended books / video series / CTF challenges</strong> for each subject?</li>
+</ul>
+<h2 id="tl-dr-">tl;dr:</h2>
+<p>The consensus is that to build a strong foundation for infosec, you will want to start by studying <strong>networking</strong>,<strong> operating systems</strong> fundamentals (Windows &amp; Linux), and some sort of scripting/<strong>programming</strong> language like Python or Bash. Study these first, and then dive into another subject (some of which are listed here) that piques your interest, if you want. There are <a href="https://www.linkedin.com/pulse/cybersecurity-domain-map-ver-30-henry-jiang/">many domains of infosec to explore</a>.</p>
+
+    <! –– BIG  TABLE TIME, FOLKS ––>
+    <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Subject</th>
+    <th class="tg-0pky">Why Study?</th>
+    <th class="tg-0pky">Book/Guide</th>
+    <th class="tg-0pky">Videos</th>
+    <th class="tg-0pky">CTFs</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Networking</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Operating Systems</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Programming</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Open Source Intelligence</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Cryptography</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Incident Response</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Digital Forensics</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Malware Analysis</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web App Exploitation</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Network &amp; Host Exploitation</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
+    <! –– BIG TABLE DONE ––>
+    <h4 id="the-most-important-skill-">The most important skill 🔍</h4>
+<p>Being able to research effectively is the most important skill that a learner can have. No one knows everything, you will inevitably forget things, and as your knowledge/experience increases, you will inevitably need to research questions that do not have a straightforward answer. </p>
+<p><strong>Bottom line:</strong> If you know how to find the answer to a question, you know the answer to the question. </p>
+<p>Basic research guide coming soon, but some quick tips in the meantime: </p>
+<ul>
+<li><a href="https://support.google.com/websearch/answer/2466433?hl=en">Google search operators</a> allow you to look for data on specific sites, in specific formats (e.g.  or <code>&quot;webshell&quot; site:github.com file:.aspx</code> will return ASPX webshells on Github.com)<ul>
+<li>In particular, adding quotations (e.g. <code>&quot;reverse engineering malware&quot;</code>) will search for an exact phrase, and prefixing a term with the minus sign (e.g. <code>-worm</code>) will exclude results with that term. These both help produce a more refined search.</li>
+</ul>
+</li>
+<li>Typing the <a href="https://www.kernel.org/doc/man-pages/">man</a> or <strong>help</strong> command on Linux/Unix and Windows (respectively) before a command will give you more information on the arguments the command takes and how to use it.</li>
+<li>If there a specific domain you&#39;re interested in, Google <code>awesome &lt;domain&gt;</code> (e.g. &#39;awesome networking&#39; or &#39;awesome osint&#39;). This will bring up a lot of resources related to the topic you&#39;re interested in, typically in a Github repo. </li>
+</ul>
+<p>If you have made a good faith effort to answer your question using available resources and still haven&#39;t found a satisfactory answer, it might be time to ask other people.  This <a href="https://www.youtube.com/watch?v=53zkBvL4ZB4">LiveOverflow Video</a> goes over how to ask a technical question.</p>
+<h3 id="networking">Networking</h3>
+<p>Networks facilitate communication between computers and understanding how they work is critical for nearly every other subject on this list. </p>
+<p><strong>Resources</strong>:</p>
+<ul>
+<li><a href="https://gaia.cs.umass.edu/kurose_ross/lectures.php">Computer Networking: A Top-Down Approach</a> (Kurose, Ross) is a (physical) textbook that comes with (online/free) guided Wireshark Labs, PowerPoint slides, interactive knowledge checks/problems, and more recently, course videos. The supplementary website content can be used without the textbook.</li>
+<li><a href="https://www.professormesser.com/network-plus/n10-007/n10-007-training-course/">Professor Messer&#39;s Network+ Videos</a> cover a broad range of networking topics, and is structured around the <a href="https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-network-n10-007-v-3-0-exam-objectives_ab5d81a3-6bbc-4690-8920-05fe37333151.pdf">objectives of the Comptia Network+</a> exam. These videos can be helpful for a quick reference.<ul>
+<li>You can use certification guides as general subject study guides, without taking the exam (which costs money). A lot of IT certifications are glorified vocabulary tests that try to hit as many relevant points as possible, so they&#39;re excellent for rapidly understanding the basics. </li>
+</ul>
+</li>
+<li>The <a href="https://www.malware-traffic-analysis.net/training-exercises.html">Malware Traffic Analysis</a> packet capture analysis exercises cover a range of different protocols, and includes solutions. Some of them are also available on the <a href="https://cyberdefenders.org/labs">CyberDefenders CTF</a> site.</li>
+<li><strong>Building a Homelab</strong> involves setting up and configuring an isolated environment to experiment with computing technology. You might set up an Active Directory forest to practice implementing Windows security controls, a set of sandboxes to test malware, or anything else you can think of. This is the most hands-on way to learn networking.<ul>
+<li>Black Hills Information Security&#39;s [<em>How to Build a Homelab</em>] webcast goes over what homelabs are and how to set them up.</li>
+<li>The Homelab <a href="https://www.reddit.com/r/homelab">Subreddit</a>/<a href="https://www.reddit.com/r/homelab/comments/fdy483/rhomelab_discord/">Discord</a> server and associated <a href="https://www.reddit.com/r/homelab/wiki/index">Wiki</a> are also good resources.</li>
+</ul>
+</li>
+</ul>
+<h3 id="operating-systems">Operating Systems</h3>
+<p>This is admittedly a large topic which consists of understanding the following, for both Windows and Linux operating systems: </p>
+<ul>
+<li><em>System Administration</em> - necessary in order to navigate around the operating system, understand concepts like file permissions, and potentially implement security controls.</li>
+<li><em>Operating System fuctionality</em> - important for understanding how programs (including malware) functions. You can probably get away with skipping learning this, but you will have a harder time grasping some concepts presented when you learn malware analysis / reverse engineering / digital forensics. </li>
+</ul>
+<p>Like networking, learning how operating systems function is fundamental as the OS manages processes, memory, software, network connections, and hardware on the computer. </p>
+<p><strong>Resources for System Administration:</strong></p>
+<ul>
+<li>TryHackMe&#39;s <a href="https://tryhackme.com/room/windowsfundamentals1xbx">Windows Fundamentals</a> and <a href="https://tryhackme.com/room/linuxfundamentalspart1">Linux Fundamentals</a> labs take students through interacting with file systems, users/groups, settings/configuration, and basic OS utilities. These labs/rooms are free, but note that you will need to make an account and need to set up OpenVPN or use TryHackMe&#39;s in-browser interface, which does have limitations.<ul>
+<li>For a completely in-browser (no setup needed) introduction to Linux functionality, try <a href="https://linuxjourney.com/">Linux Journey</a>, which also has examples / exercises / built-in quizzes.</li>
+</ul>
+</li>
+<li><a href="https://overthewire.org/wargames/bandit/">OverTheWire Bandit wargame</a> teaches students to navigate and use basic functionality of a Linux system via <em>ssh</em> (secure shell network protocol). <ul>
+<li>You can ssh via <a href="https://docs.microsoft.com/en-us/windows/terminal/tutorials/ssh">Windows Terminal</a>, Windows Subsystem for Linux <a href="https://docs.microsoft.com/en-us/windows/wsl/install">(WSL)</a>, or a virtual machine.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Resources for OS functionality:</strong></p>
+<ul>
+<li><strong><em>The Elements of Computing Systems</em></strong> (also called <a href="https://www.nand2tetris.org/">Nand2Tetris</a>) is a book at will take you from building NAND logic gates to an assembler to programming a game (like Tetris) in a high-level language, giving you a pretty comprehensive understanding of how a computer works. It is project-centric, and there is also a <a href="https://www.coursera.org/learn/build-a-computer">2-part Coursera course</a> (free to audit) with video instruction.</li>
+<li><strong><em>Windows Internals</em></strong> - there are multiple versions and volumes of this book, which goes over how Windows and core operating system functionality works. Version 7, volume 1 is nearly 800 pages. If you want to go nuts, read/skim the entire thing, but it&#39;s most important to read the first chapter, <em>Concepts and Tools</em>, which outlines fundamental concepts of the Windows operating system.<ul>
+<li>Pavel Yusofovich, co-author of <em>Windows Internals</em> and a few other books on Windows has several courses covering Windows Internals on Pluralsight. Not free, but Pluralsight periodically has &#39;free weekend&#39;/&#39;free month&#39; promotions. Worth mentioning.</li>
+<li>For hands-on practice, consider Sam Bowne&#39;s <a href="https://samsclass.info/126/WI2021.htm">Windows Internal CTF</a>, which is periodically run in conjunction with Windows Internals workshops that Sam offers at different conferences. You can still submit and check your flags, and each set of flags is presented in a lab-style format (with instructions &amp; screenshots). </li>
+</ul>
+</li>
+</ul>
+<h3 id="programming">Programming</h3>
+<p>If there is a particular language you&#39;d like to learn, go for it! However, Python is generally viewed as the best programming language for beginners to learn, as it is:</p>
+<ul>
+<li><em>high level</em>, meaning that it is more abstracted from machine code and is more readable.</li>
+<li><em>versatile</em>, and used for a wide range of subjects (including infosec). Many tools and scripts relevant to infosec are written in Python. </li>
+<li><em>widely supported</em> - there are a ton of different online platforms that teach beginners how to Python, and abundant documentation.</li>
+</ul>
+<p>In particular with programming, focus on understanding how to program with sockets, and make network connections with your scripts. Check out modules like <a href="https://github.com/SecureAuthCorp/impacket">Impacket</a> and try using them in your scripts.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><a href="https://cs50.harvard.edu/x/2021/">Harvard&#39;s CS50</a> OpenCourseWare (free online course) takes students through fundamental computer science and programming concepts using multiple languages. It encorporates projects and is also available as an <a href="https://cs50.edx.org/">EdX MOOC course</a>. </li>
+<li><a href="https://automatetheboringstuff.com/2e/">Automate the Boring Stuff with Python</a> is a (free) book that focuses on practical, hands-on scripting. Of particular interest is the Web Scraping chapter. </li>
+</ul>
+<p>The <em>C/C++</em> programming language is also recommended for beginners after Python, and is &quot;lower-level&quot;, and are less abstracted from machine code compared to Python. In C, programmers directly interact wih low-level infrastructure like memory and buffers. This makes C more challenging to learn. An understanding of C will be helpful if you want to do disassembly / reverse engineering, or otherwise have a better grasp on reading and understanding programs and how they interact with the operating system.</p>
+<h3 id="open-source-intelligence-osint-">Open Source Intelligence (OSINT)</h3>
+<p>OSINT refers to collection and analysis of publicly available information, generally available on different parts of the Internet. Within the context of infosec, OSINT is used across multiple domains: incident responders may use it to triage incidents and identify an exploited vulnerability, malware analysts may research domains and code snippets in an effort to attribute malware, and so on. Unlike other domains, the resources for OSINT are somewhat scattered because there are so many types of OSINT, which extends beyond the scope of research specific to infosec.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><a href="https://github.com/sinwindie/OSINT">OSINTDojo&#39;s Mindmaps</a> provide graphical maps of how to pivot off of pieces of information across a wide range of services. </li>
+<li><a href="https://inteltechniques.com">Open Source Intelligence Techniques</a> (Bazzell) aggregates OSINT strategies that can be found across the web, and also describes how to use specific OSINT tools and methodologies for investigations.  The author also has a <a href="https://inteltechniques.com/podcast.html">&quot;Privacy, Security, and OSINT&quot; podcast</a> which can include novel OSINT techniques.</li>
+<li><a href="https://osintcurio.us/aboutus/">OSINT Curious Project</a> and <a href="https://www.bellingcat.com/">BellingCat&#39;s Guides/Case Studies</a> are both sites that focus on presenting OSINT/research techniques. Bellingcat is more oriented towards geopolitical investigations and journalism, and has excellent guides and case studies.</li>
+</ul>
+<p><strong>Tool Collections</strong>:</p>
+<ul>
+<li><a href="https://metaosint.github.io/chart/">MetaOSINT</a> is an interactive visualization project that helps for prioritization of OSINT tools within different categories based on overlap of tools from different OSINT tools lists.</li>
+<li><a href="https://bit.ly/bcattools">Bellingcat Online Investigation Toolkit</a> </li>
+</ul>
+<p><strong>Hands-On Practice</strong>:</p>
+<ul>
+<li>Image/geolocation OSINT: Try <a href="https://twitter.com/quiztime">Quiztime challenges</a> on Twitter, which generally involves answering questions about an image or video after researching the origin/context.</li>
+<li>People OSINT: Try a <a href="https://www.tracelabs.org/initiatives/search-party">TraceLabs Search Party CTF</a>, where participants research missings persons cases and gather information that can be used by law enforcement. The <a href="https://download.tracelabs.org/Trace-Labs-OSINT-Search-Party-CTF-Contestant-Guide_v1.pdf">Contestants Guide</a> provides an overview, and includes link(s) to writeups on past CTFs. These CTFs are synchronous. <ul>
+<li>Tracelabs also has active cases posted to their Slack/Trello, but are undergoing some organizational changes right now and are currently unavailable. These cases are not tied to a CTF and just exist for the community to work on collectively. </li>
+</ul>
+</li>
+<li><a href="https://sourcing.games">Sourcing Games</a> are a large set of CTFs originally created for recruiters/&quot;sourcers&quot;. There is a good mix of challenges besides &#39;people&#39;-oriented challenges.</li>
+</ul>
+<h3 id="cryptography">Cryptography</h3>
+<p>Cryptography is built around mathematical problems/concepts. If you don&#39;t have a strong foundation in math, consider reading / skimming <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/readings/MIT6_042JS15_textbook.pdf"><em>Mathematics for Computer Science</em></a>, a free MIT OpenCourseWare textbook that has an <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/">accompanying online course</a>. You can skip around. Reading through the Number Theory section is recommended for Cryptography, specifically.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><a href="https://crypto.stanford.edu/~dabo/courses/OnlineCrypto/">Dan Boneh&#39;s Online Cryptography Course</a> provides an amazing overview of cryptography and includes videos and a free <a href="http://toc.cryptobook.us/">textbook</a> (which comes with proofs and homework exercises). You can also take the course on the <a href="https://www.coursera.org/learn/crypto">Coursera MOOC platform</a>. </li>
+<li>[CryptoHack] is an online CTF platform focused around learning cryptography, focusing on &quot;breaking bad implementations of &quot;modern&quot; crypto, such as AES, RSA, and Elliptic-curve&quot; in an accessible way. Knowledge of a programming language (especially Python) is highly recommended. Some of the problems, like the &#39;Crypto on the Web&#39; problems are very practical. </li>
+</ul>
+<h3 id="digital-forensics-incident-response-dfir-">Digital Forensics &amp; Incident Response (DFIR)</h3>
+<p><em>Incident response</em> involves immediate triage and response to a security incident (e.g. &#39;stopping the bleeding&#39;) whereas <em>forensics</em> typically involves retroactively &#39;stepping through&#39; data in order to develop a comprehensive picture of what happened. These two fields are intertwined (and malware analysis may also be part of this), hence we are presenting them together. </p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VYROU-ZwZX8&amp;list=PLlv3b9B16ZadqDQH0lTRO4kqn2P1g9Mve&amp;ab_channel=13Cubed"><strong>13Cubed&#39;s Windows Forensics YouTube videos</strong></a> cover fundamental Windows forensics artifacts and concepts (like MACB timestamps) in a way that is easy to understand, with usage of modern tools provided as examples. These videos are also up-to-date, and relevant.<ul>
+<li>13Cubed (Richard Davis) also has other videos on memory forensics, and other DFIR topics. Probably the best collection of video resources on forensics.</li>
+</ul>
+</li>
+<li><strong><em>Incident Response and Computer Forensics</em></strong> (Luttgens, Pepe, Mandia) concisely and directly explains phases of the incident response lifecycle (preparation to post-remediation), gives an overview of forensic data collection techniques, and an overview of network and host-based forensic artifacts. It also presents case studies, which provides context on why certain actions are important. While this book was published in 2014, the fundamental concepts present - particularly, how to approach each phase of an incident. </li>
+<li><a href="https://www.memoryanalysis.net/amf">The Art of Memory Forensics</a> (Ligh, Case, Levy, Walters) explains Windows, Linux, and MacOS memory forensics in depth, and utilizes the open-source Volatility (version 2) memory forensics framework. Labs and supplementary materials can downloaded from the <a href="https://www.memoryanalysis.net/amf">book&#39;s website</a>. Note that Volatility was completely rewritten (and is now much faster) and released as <a href="https://volatility3.readthedocs.io/en/latest/">Volatility 3</a> in 2019. </li>
+<li><strong><em>File System Forensic Analysis</em></strong> (Carrier) walks through a wide range of different file systems and strategies for analyzing file metadata and recovering deleted files.</li>
+<li>The <a href="https://www.dfir.training/artifacts">DFIR.Training site</a> is an excellent reference for many DFIR topics, and has a section that allows for filtering/searching different artifacts. This book was published in 2005, but a lot of the material presented is still relevant. Resources like the <a href="forensicswiki.xyz">Forensics Wiki</a> can be used as a reference for newer file systems like ReFS.</li>
+<li>The <a href="https://cyberdefenders.org/labs">CyberDefenders Labs</a> site has collected a lot of forensics challenges/images onto 1 platform, which is more accessible than accessing each challenge individually. <ul>
+<li><a href="https://cyberdefenders.org/labs/15">Boss of the Soc</a> (BOTS) is a team-based Splunk SIEM (Security Information and Event Management) CTF which challenges students to answer questions about realistic security incidents, and is of particular interest.</li>
+</ul>
+</li>
+</ul>
+<p>If you are doing DFIR, depending on the size of your organization, you may also be interested in Cyber Threat Intelligence (CTI). <strong><em>Intelligence-Drive Incident Response</em></strong> (Roberts, Brown) explains different CTI cycles/models and how they can be implemented into the incident response process.</p>
+<h3 id="malware-analysis-reverse-engineering-re-">Malware Analysis &amp; Reverse Engineering (RE)</h3>
+<p>A prerequisite for malware analysis and RE is setting up an environment where you can safely detonate and analyze malware, and reset the environment back to &#39;normal&#39; once you&#39;re done. This is generally done through the use of <strong>virtual machines</strong> (VMs), which are essentially emulated computers that you can run from your own machine (host OS) or the cloud (You can also use Docker containers). <a href="https://www.fireeye.com/blog/threat-research/2017/07/flare-vm-the-windows-malware.html">FireEye&#39;s FLARE VM</a> is a Windows 10 environment that comes with a ton of preinstalled tools for both dynamic and static analysis. Note that you will need a <a href="https://support.microsoft.com/en-us/windows/create-an-iso-file-for-windows-10-38547366-1dcb-7afd-1726-9eb222d72705">Windows 10 ISO</a> for it. <a href="https://remnux.org/">REMnux</a> is a Linux-based toolkit for malware analysis, and is especially helpful for analyzing malicious documents (maldocs)</p>
+<ul>
+<li><a href="https://www.malwaretech.com/2017/11/creating-a-simple-free-malware-analysis-environment.html">MalwareTech Malware Analysis Environment Guide</a></li>
+<li>See <a href="https://www.virtualbox.org/manual/ch01.html">VirtualBox&#39;s Setup Guide</a> for instructions on setting up a free hypervisor (which allows you to run VMs on your host ccomputer) and info on how hypervisors work.</li>
+</ul>
+<p>When disassembling a sample, the disassembler will display machine language in Assembly language format, hence it will also be helpful to learn Assembly language (like x86), particularly for RE / binary exploitation. <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html">UoV&#39;s x86 Assembly Guide</a> offers a straightforward overview.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><strong><em>Practical Malware Analysis</em></strong> is a book that takes students through the basics of static and dynamic analysis, basic disassembly, and malware functionality. Each chapter has a set of labs which are downloadable via the <a href="https://practicalmalwareanalysis.com/labs/">book website</a>.<ul>
+<li>The amazing Sam Bowne periodically hosts an online PMA course (using the textbook and going through the projects) which he graciously allows any student to audit online for free. Check his website to see if he&#39;s teaching it soon, or use the videos/lecture notes from a <a href="https://samsclass.info/126/126_S21.shtml">previous iteration</a>.</li>
+<li><strong><em>Malware Analysis and Detection Engineering</em></strong> (Mohanta, Saldanha) provides a more gradual introduction to malware analysis (including chapters on Windows Internals, for instance) and has newer examples, but it is less widely available compared to <em>PMA</em>.</li>
+</ul>
+</li>
+<li><a href="https://pwn.college/">Pwn.college</a> is an online course that takes students through program functionality, Assembly, debugging and reverse engineering. Each module has videos and practice problems. </li>
+<li><a href="https://guyinatuxedo.github.io/">Nightmare</a> is an online course focused around CTF challenges to teach different RE concepts. Each challenge has a writeup and can be &#39;solved&#39; using open-source (free) tools. Some of the </li>
+</ul>
+<p><strong>Resources for Researching Malware:</strong></p>
+<ul>
+<li><a href="https://malpedia.caad.fkie.fraunhofer.de/">Malpedia</a> is pretty invaluable for tracking malware and associated threat actor groups. The site acts as an aggregator for information on different groups and malware families, providing easy access to high quality information on a specific type of malware you&#39;re trying to research.</li>
+<li><a href="https://vx-underground.org/samples.html">vx-underground</a> groups malware sample by family and APT (advanced persistent threat) groups, with no account needed to download samples.</li>
+<li><a href="https://threatfox.abuse.ch/browse/">ThreatFox IoC Database</a> is constantly being updated with indicators of compromise (e.g. hashes, domain names, IP addresses, etc) for malware samples. Search by IoC, tag, or malware family. Also helpful for triaging incidents from a DFIR perspective.</li>
+</ul>
+<h3 id="web-app-exploitation">Web App Exploitation</h3>
+<p>Web application exploitation involves understanding different types of flaws  in authentication/authorization and the way data is stored.</p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>The <a href="https://owasp.org/Top10/">OWASP Top 10</a> represents the most widespread / common web application vulnerabilities and is a standard for web application security. Click the hamburger menu (≡) &gt; Top 10:2021 List to navigate to different pages explaining each vulnerability.</li>
+<li><a href="https://portswigger.net/web-security">PortSwigger Web Security Academy</a> is a free self-guided set of labs/guides that explains web application vulnerabilies, providing hands-on labs for exploitation using the Burp Suite Framework. PortSwigger Academy was developed by the group behind the <a href="https://portswigger.net/web-security/web-application-hackers-handbook">Web Application Hacker&#39;s Handbook</a> and is updated as a living reference. Note that for some labs, using the Burp Suite Professional (not free) is advised - you can skip these labs or complete (some of) them with Burp Suite Community (free) Edition (which is admittedly a bit harder). </li>
+</ul>
+<h3 id="network-host-exploitation">Network &amp; Host Exploitation</h3>
+<p> TBD because I have no idea what I&#39;m talking about. :)</p>
+<p><strong>Resources:</strong></p>
+<h3 id="faq">FAQ</h3>
+<h4 id="what-computer-operating-system-tools-do-i-need-to-get-started-">What computer / operating system / tools do I need to get started?</h4>
+<p>Use what you have. You <em>don&#39;t</em> need any specific hardware or operating system to learn. This includes Kali or Parrot Linux, two penetration testing-focused Linux distributions.</p>
+<p>It <em>will</em> be helpful to have some sort of Linux command line interface from which you can install and run tools. </p>
+<ul>
+<li>If you are on MacOS or a Linux distribution, awesome! Use your installation manager of choice and plonk away.</li>
+<li>If you are on Windows, you may consider installing a virtual machine, or using Windows Subsystem for Linux (WSL).</li>
+</ul>
+<h4 id="what-if-i-want-something-that-will-give-me-a-bit-of-everything-">What if I want something that will give me a bit of everything?</h4>
+<ul>
+<li><a href="https://tutorials.cyberaces.org/tutorials.html">SANS Cyber Aces</a> goes over just the fundamentals. There are several hours of content here.</li>
+<li><a href="https://www.professormesser.com/security-plus/sy0-601/sy0-601-video/sy0-601-comptia-security-plus-course/">Professor Messer&#39;s Security+ course videos</a> are structured around objectives for the Security+ certification exam, so referring to the videos provides a good way to hit a lot of different points. Warning: there are ~21 hours worth of video content.</li>
+<li><a href="https://wildwesthackinfest.com/antisyphon/soc-core-skills-john-strand/">SOC Core Skills with John Strand</a> is a 16-hour (4 days x 4 hours) live/synchronous course with hands-on labs offered periodically through Black Hills Information Security Antisyphon. It is <em>pay what you can</em> and seems to be offered every 4-5 months.</li>
+</ul>
+<h4 id="how-do-i-get-a-job-in-infosec-what-certifications-do-i-get-">How do I get a job in infosec? What certifications do I  get?</h4>
+<p>Build a foundation in the basics of infosec - once you know the core concepts, you will have the capacity and language to teach yourself whatever you need to.</p>
+<p>Recommended Resources:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iB_xCLsgQZI">Black Hills Infosec&#39;s 5 Year Plan into Infosec</a></li>
+<li><a href="https://danielmiessler.com/blog/build-successful-infosec-career/">Daniel Miessler&#39;s <em>Build a Successful Infosec Career</em></a></li>
+<li><a href="https://www.reddit.com/r/ITCareerQuestions/wiki/index">/r/ITCareerQuestions Wiki</a> is not specific to security, but answers a lot of common questions regarding IT jobs and generally gives good advice for getting into IT. </li>
+</ul>
+<h4 id="how-do-i-stay-up-to-date-on-infosec-topics-">How do I stay up-to-date on infosec topics?</h4>
+<p>If you generally want to stay informed, here are a few options: </p>
+<ul>
+<li>Join local (or remote) meetup or interest groups. Some popular groups which may have chapters near you include: 2600, DEFCON, OWASP, ISACA</li>
+<li>Twitter - follow different tags and groups of users and then use <a href="https://tweetdeck.twitter.com/" title="https://tweetdeck.twitter.com/">https://tweetdeck.twitter.com/</a> to get a good view of things happening day-to-day. </li>
+<li>Email aggregation feeds/lists - Personal suggestions: I&#39;m subscribed to the following email newsletters: <a href="https://www.sans.org/newsletters/newsbites/"><em>SANS NewsBites</em></a> (semiweekly summary of infosec news articles, with commentary from different subject matter experts) and Daniel Miessler&#39;s <a href="https://danielmiessler.com/newsletter/">Unsupervised Learning</a> newsletter which also has a <a href="https://danielmiessler.com/podcast/">podcast</a>.</li>
+<li>Set up some sort of feed, be it an RSS feed using <a href="https://feedly.com/">Feedly</a> or a Discord server with a feed produced via the <a href="https://socialfeeds.app/">SocialFeeds</a> bot.</li>
+</ul>
+<h4 id="what-is-a-ctf-">What is a CTF?</h4>
+<p>Per the <a href="https://trailofbits.github.io/ctf/">Trail of Bits CTF Field Guide</a>, Capture the Flag competitions &quot;distill major disciplines of professional computer security work into short, objectively measurable exercises. The focus areas that CTF competitions tend to measure are vulnerability discovery, exploit creation, toolkit creation, and operational tradecraft.&quot; </p>
+<p>CTFs are generally grouped into 2 categories:</p>
+<ul>
+<li><em>jeopardy style</em>, consisting of individual challenges focused on different domains of infosec, such as forensics, binary exploitation, OSINT, IoT, etc</li>
+<li><em>attack/defense</em>, where each team has vulnerable services/computers that they need to configure/defend, while also attacking other teams&#39; resources</li>
+</ul>
+<p>Here are some good asynchronous CTFs for starting out: </p>
+<ul>
+<li><a href="https://overthewire.org">OverTheWire Wargames</a> are SSH/shell-based, have cute themes, and cover topics from the absolute basics of using <a href="https://overthewire.org/wargames/bandit/">Linux utilities</a> to <a href="https://overthewire.org/wargames/natas/">web security</a> to <a href="https://overthewire.org/wargames/narnia/">exploitation techniques</a>.</li>
+<li><a href="https://picoctf.org/">PicoCTF</a> is a beginner &#39;jeopardy-style&#39; CTF that assumes no knowledge. If you are in middle or high school in the US, you can also win prizes. Available as a synchronous (e.g. time-limited) CTF and retroactively for play.</li>
+<li><a href="https://tryhackme.com/">TryHackMe</a> is platform for learning security with &#39;rooms&#39; </li>
+<li><a href="https://blueteamdefenders.com/">https://blueteamdefenders.com/</a> - blue-team oriented
+These CTFs are available at any time and are helpful for building fundamental knowledge. You can search for a &#39;writeup&#39; if you get stuck. </li>
+</ul>
+<p>If you want to do a live / synchronous CTF that is more time-restricted, check out <a href="https://ctftime.org/">CTF Time</a>. </p>
+<h4 id="what-about-pet-topic-">What about <em>pet topic</em>?</h4>
+<p>Here are some further recommendations on topics not discussed in this guide:
+TBD</p>
+<h4 id="what-do-i-do-about-my-imposter-syndrome-">What do I do about my imposter syndrome?</h4>
+<p>Imposter syndrome involves feeling like you&#39;re incompetent and will inevitably fail, despite your experience / education / skills / accomplishments. </p>
+<p>What to do about this? Practice failing. When you have imposter syndrome, the idea of failing can cause you to feel paralyzed, or make you overreact when you make a mistake. When you practice failing, you realize that making mistakes is inevitable. Failure is fleeting, but so is success. When you go into things with the mindset of doing your best, but accepting that you may not be perfect, you become resilient to failure. </p>
+<p>We&#39;ve all accidentally mis-triaged something or accidentally brought down a production server for a few hours. It doesn&#39;t make you a bad or stupid or careless person. While making a mistake or miss does not have any bearing on who you are, the way you recover from the miss does. At the end of the day, people are too busy thinking/worrying about themselves, and will not remember you making a mistake. People WILL remember you if you:</p>
+<ul>
+<li>show <strong>self-awareness</strong> by analyzing your process</li>
+<li>show <strong>passion</strong> by caring about your mistake</li>
+<li>show <strong>resilience</strong> and <strong>humility</strong> by overcoming your anxiety/frustration and using the mistake as a learning opportunity</li>
+<li>show <strong>leadership</strong> by using your mistake as a chance to teach others the lessons you learned</li>
+</ul>
+<p>Also, write down your &#39;wins&#39; - the things you have accomplished and are proud of - so that when you make a mistake, you can remember that you&#39;ve also done awesome things and will continue to both excel and fuck up in the future. It is inevitable. </p>
 
     <br>
     
 <! –– Footer stuff here ––>
-    <p>Version 1.0. Made by: y5 (email me at <code>mail@yyyyy.me</code>). </p>
+    <p>Version -1.0.  </p>
   </div>
 </body>
   
