@@ -243,7 +243,7 @@
     <h3 id="malware-re">Malware Analysis &amp; Reverse Engineering (RE)<a class="subtitle-link pl-10" href="#malware-re" title="Malware Analysis & RE">§</a></h3>
 <p>A prerequisite for malware analysis and RE is setting up an environment where you can safely detonate and analyze malware, and reset the environment back to &#39;normal&#39; once you&#39;re done. This is generally done through the use of <strong>virtual machines</strong> (VMs), which are essentially emulated computers that you can run from your own machine (host OS) or the cloud (You can also use Docker containers). <a href="https://www.fireeye.com/blog/threat-research/2017/07/flare-vm-the-windows-malware.html">FireEye&#39;s FLARE VM</a> is a Windows 10 environment that comes with a ton of preinstalled tools for both dynamic and static analysis. Note that you will need a <a href="https://support.microsoft.com/en-us/windows/create-an-iso-file-for-windows-10-38547366-1dcb-7afd-1726-9eb222d72705">Windows 10 ISO</a> for it. <a href="https://remnux.org/">REMnux</a> is a Linux-based toolkit for malware analysis, and is especially helpful for analyzing malicious documents (maldocs)</p>
 <ul>
-<li><a href="https://www.malwaretech.com/2017/11/creating-a-simple-free-malware-analysis-environment.html">MalwareTech Malware Analysis Environment Guide</a></li>
+<li>MalwareTech&#39;s <a href="https://www.malwaretech.com/2017/11/creating-a-simple-free-malware-analysis-environment.html">Malware Analysis Environment Guide</a> explains how to set up and install Virtual Machines for malware analysis</li>
 <li>See <a href="https://www.virtualbox.org/manual/ch01.html">VirtualBox&#39;s Setup Guide</a> for instructions on setting up a free hypervisor (which allows you to run VMs on your host computer) and info on how hypervisors work.</li>
 </ul>
 <p>When disassembling a sample, the disassembler will display machine language in Assembly language format, hence it will also be helpful to learn Assembly language (like x86), particularly for RE / binary exploitation. <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html">UoV&#39;s x86 Assembly Guide</a> offers a straightforward overview.</p>
@@ -263,6 +263,10 @@
 <li><a href="https://vx-underground.org/samples.html">vx-underground</a> groups malware sample by family and APT (advanced persistent threat) groups, with no account needed to download samples.</li>
 <li><a href="https://threatfox.abuse.ch/browse/">ThreatFox IoC Database</a> is constantly being updated with indicators of compromise (e.g. hashes, domain names, IP addresses, etc) for malware samples. Search by IoC, tag, or malware family. Also helpful for triaging incidents from a DFIR perspective.</li>
 </ul>
+<ul>
+<p>For a more detailed discussion of resources for RE &amp; malware analysis (including specific recommendations for learning about different types of malware techniques, see Hasherezade&#39;s <a href="https://hshrzd.wordpress.com/how-to-start/">How to start</a> guide.</p>
+    </ul>
+  
 <h3 id="web-app-exploitation">Web App Exploitation</h3>
 <p>Web application exploitation involves understanding different types of flaws  in authentication/authorization and the way data is stored.</p>
 <p><strong>Resources:</strong></p>
