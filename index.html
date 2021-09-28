@@ -184,11 +184,23 @@
 <p>For a more detailed discussion of resources for RE &amp; malware analysis (including specific recommendations for learning about different types of malware techniques), see Hasherezade&#39;s <a href="https://hshrzd.wordpress.com/how-to-start/">How to start</a> guide.</p>
 
 <h3 id="network-host-exploitation"><a class="subtitle-link pl-10" href="#pentesting" title="Pentesting">§</a> Pentesting</h3>
-<p> TBD because I have no idea what I&#39;m talking about. :)</p>
+<p>Penetration testing involves finding and exploiting vulnerabilities across an organization&#39;s computer infrastructure, which includes networks, operating systems, identity infrastructure like Active Directory, and applications/services. Emulating the different steps that an attacker can take as they move through a system is helpful for understanding how to defend against malicious activity. </p>
 <p><strong>Resources:</strong></p>
+<ul>
+<li><strong><em>Penetration Testing</em></strong> (Weidman) walks students through setting up their exploitation environment and different phases of the attack lifecycle, including exploit development. Weidman has a <a href="https://www.youtube.com/playlist?list=PLZqCalOsI0EA3cuAL1kXYesKO5eyilxua">YouTube Playlist</a> with walkthrough videos to complement chapters of the book. While this book was published in 2014, the underlying concepts presented are still relevant.<ul>
+<li>Note: Weidman is currently working on an updated version of this book per information posted to their <a href="https://twitter.com/georgiaweidman/status/1358787820098383878">Twitter</a> account.</li>
+</ul>
+</li>
+<li>INE/ELearnSecurity&#39;s <a href="https://my.ine.com/CyberSecurity/learning-paths/a223968e-3a74-45ed-884d-2d16760b8bbd/penetration-testing-student">Penetration Testing Student</a> takes student through prerequisite knowledge - including networking and programming fundamentals - before discussing different exploitation techniques. If you are looking to get started with exploitation right away, this is a good resource.<ul>
+<li>Note: The course can be taken for free with the <a href="https://checkout.ine.com/starter-pass">INE Starter Pass</a>, though you will only have access to the course content (and not the labs). This course is used to prepare for the <a href="https://elearnsecurity.com/product/ejpt-certification/">eJPT</a>, which you can skip. </li>
+</ul>
+</li>
+<li><a href="https://book.hacktricks.xyz/">HackTricks</a> is an extensive collection of techniques across multiple areas of exploitation, and is a great reference for CTFs.</li>
+</ul>
+<p>To practice penetration testing techniques, try exploiting some hosts on a CTF platform like <a href="https://tryhackme.com/">TryHackMe</a> or <a href="https://www.hackthebox.eu/">HackTheBox</a>.</p>
 
     
-<h3 id="web-app-exploitation"><a class="subtitle-link pl-10" href="#web-app-exploitation" title="Web Application Exploitation">§</a>Web App Exploitation</h3>
+<h3 id="web-app-exploitation"><a class="subtitle-link pl-10" href="#web-app-exploitation" title="Web Application Exploitation">§</a> Web App Exploitation</h3>
 <p>Web apps represent a major part of how people interact with computers and the Internet on a day-to-day basis. Exploitation of them involves understanding different types of flaws in authentication/authorization and the way data is stored. </p>
 <ul>
 <li>Penetration testing encompasses this, but we are including it as a distinct section because many newcomers are specifically interested in studying web app exploitation so that they can pursue bug bounties. </li>
